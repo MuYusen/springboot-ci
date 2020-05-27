@@ -7,7 +7,7 @@ pipeline {
     //repoBranch参数
     string(name:'repoBranch', defaultValue: 'master', description: 'git分支名称')
     //服务器选择
-    choice(name: 'server',choices:'192.168.1.107,9090\n192.168.1.60,9090', description: '测试服务器列表选择(IP,JettyPort,Name,Passwd)')
+    choice(name: 'server',choices:'123', description: '测试服务器列表选择(IP,JettyPort,Name,Passwd)')
     string(name:'dubboPort', defaultValue: '31100', description: '测试服务器的dubbo服务端口')
     //单元测试代码覆盖率要求，各项目视要求调整参数
     string(name:'lineCoverage', defaultValue: '20', description: '单元测试代码覆盖率要求(%)，小于此值pipeline将会失败！')
