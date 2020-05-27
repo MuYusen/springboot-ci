@@ -1,5 +1,5 @@
 #!groovy
-Library 'jenkins-shared-library-cicd'
+@Library('jenkins-shared-library-cicd')
 
 pipeline {
     agent any
