@@ -5,7 +5,8 @@ node {
         sh 'ls -al ;pwd;env;'
     }
     stage('build'){
-        sh 'mvn clean package'
+        sh 'find'
+        //sh 'mvn clean package'
     }
     stage('deploy'){
         sayHello('MuYu')
