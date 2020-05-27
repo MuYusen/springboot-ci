@@ -2,5 +2,5 @@
 
 stage('Demo') {
     echo 'Hello world'
-    sayHello 'Test'
+    sayHello "Test"
 }
